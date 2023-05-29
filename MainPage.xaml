@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            BackgroundColor="Pink"
+            VerticalOptions="Center">
+
+            <Image
+                Source="rapidosfuriosos.jpg"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="250"
+                HorizontalOptions="Center" />
+
+            <!--<Label
+                Text="Hello, World!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />-->
+            <Label 
+                Text=" Selecciona el auto del cual desea ver su informacion"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="20"
+                BackgroundColor="Chocolate"
+                HorizontalOptions="Center" />
+
+            <!--<Label
+                Text="Welcome to .NET Multi-platform App UI"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />-->
+               
+            
+            <!--Aca esta el boton de sedan-->
+            <Button
+                x:Name="CounterBtn"
+                Text="sedan"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center"
+                ImageSource=" sedan.jpg "
+                BackgroundColor="Aqua"
+                HeightRequest="200"
+                />
+            <Label x:Name="sedanLabel" Text="" />
+
+            <!--Aca esta el boton de PickUp y podemos modificar el color o cambiar su imagen-->
+            <Button
+           
+                x:Name="CounterBtn1"
+                Text="PickUp"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked1"
+                HorizontalOptions="Center" 
+                ImageSource="pickup.jpg "
+                BackgroundColor="Aqua"
+                HeightRequest="200"
+                />
+            <Label x:Name="pickUpLabel" Text="" />
+
+
+            <!--Aca esta el boton de SUV-->
+            <Button
+                x:Name="CounterBtn2"
+                Text="SUV"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked2"
+                HorizontalOptions="Center" 
+                ImageSource=" suv.jpg "
+                BackgroundColor="Aqua"
+                HeightRequest="200"
+                />
+            <Label x:Name="suvLabel" Text="" />
+
+            <!--Aca esta el boton de $X-->
+            <Button
+                x:Name="CounterBtn3"
+                Text="CuatroPorCuatro"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked3"
+                HorizontalOptions="Center" 
+                ImageSource=" fordd.jpg"
+                BackgroundColor="Aqua"
+                HeightRequest="200"
+                />
+            <Label x:Name="cuatroPorCuatroLabel" Text="" />
+
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
